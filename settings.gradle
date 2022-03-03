@@ -1,0 +1,2 @@
+rootProject.name = "Ass_library"
+include ':app'

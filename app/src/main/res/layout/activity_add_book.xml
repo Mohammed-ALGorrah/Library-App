@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBook">
+
+    <TextView
+        android:id="@+id/titl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Add Book"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/B_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="35dp"
+        android:hint="Book name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titl"
+
+        />
+
+
+    <EditText
+        android:id="@+id/B_author"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="35dp"
+        android:hint="Book author"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_name"
+
+        />
+
+    <EditText
+        android:id="@+id/B_year"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="35dp"
+        android:hint="Lunch year"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_author"
+
+        />
+
+    <EditText
+        android:id="@+id/B_price"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="35dp"
+        android:hint="Price"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_year"
+
+        />
+
+    <RatingBar
+        android:id="@+id/Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:numStars="5"
+        android:rating="4.5"
+        android:stepSize="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/B_price" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Add Book"
+        android:background="@color/MainOrange"
+
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
