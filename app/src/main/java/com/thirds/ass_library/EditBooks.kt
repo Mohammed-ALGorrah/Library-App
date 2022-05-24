@@ -163,8 +163,6 @@ class EditBooks : AppCompatActivity() {
 
             }
         })
-
-
 /*
         db!!.collection("Books").whereEqualTo("bookId", id).get().addOnSuccessListener { book ->
             B_name.setText(book.documents[0].get("bookName").toString())
