@@ -22,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginLeft="35dp"
+        android:text="nameee"
         android:layout_marginTop="25dp"
         android:layout_marginRight="35dp"
         android:hint="Book name"
@@ -37,6 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginLeft="35dp"
+        android:text="authorr"
         android:layout_marginTop="25dp"
         android:layout_marginRight="35dp"
         android:hint="Book author"
@@ -51,8 +53,10 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginLeft="35dp"
+        android:text="19999"
         android:layout_marginTop="25dp"
         android:layout_marginRight="35dp"
+        android:inputType="number"
         android:hint="Lunch year"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -67,10 +71,50 @@
         android:layout_marginLeft="35dp"
         android:layout_marginTop="25dp"
         android:layout_marginRight="35dp"
+        android:inputType="numberDecimal"
         android:hint="Price"
+        android:text="999"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/B_year"
+
+        />
+
+    <Button
+        android:id="@+id/B_image"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="35dp"
+        android:background="@color/white"
+        android:drawableRight="@drawable/ic_upload"
+        android:gravity="left|center"
+        android:hint="Upload Book Cover"
+        android:paddingRight="20dp"
+        android:textSize="19dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_price"
+
+        />
+
+    <Button
+        android:id="@+id/B_video"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="35dp"
+        android:background="@color/white"
+        android:drawableRight="@drawable/ic_upload"
+        android:gravity="left|center"
+        android:hint="Upload Book video"
+        android:paddingRight="20dp"
+        android:textSize="19dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_image"
 
         />
 
@@ -84,22 +128,21 @@
         android:stepSize="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/B_price" />
+        app:layout_constraintTop_toBottomOf="@id/B_video" />
 
     <Button
         android:id="@+id/addBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:text="Add Book"
         android:background="@color/MainOrange"
-
+        android:text="Add Book"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
 
         />
 

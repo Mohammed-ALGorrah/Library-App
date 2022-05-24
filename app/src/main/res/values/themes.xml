@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.Ass_library" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimary">@color/MainOrange</item>
         <item name="colorPrimaryVariant">#FFD600</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/MainOrange</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/MainOrange</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
